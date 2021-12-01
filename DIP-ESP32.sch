@@ -1,0 +1,511 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ESP32 DIP Board"
+Date "2021-11-25"
+Rev "V1.0"
+Comp "https://github.com/KimiakiK"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DIP-ESP32:ESP32-WROOM-32U U1
+U 1 1 61C1E92E
+P 5500 2650
+F 0 "U1" H 5500 3700 50  0000 C CNN
+F 1 "ESP32-WROOM-32U" H 5500 3600 50  0000 C CNN
+F 2 "DIP-ESP32:ESP32-WROOM-32" H 5500 2650 50  0001 C CNN
+F 3 "" H 5500 2650 50  0001 C CNN
+	1    5500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIP-ESP32:DIP-ESP32-CN J2
+U 1 1 61C22958
+P 5500 5500
+F 0 "J2" H 5500 6400 50  0000 C CNN
+F 1 "DIP-ESP32-CN" H 5500 6300 50  0000 C CNN
+F 2 "DIP-ESP32:DIP-ESP32-CN" H 5500 5500 50  0001 C CNN
+F 3 "" H 5500 5500 50  0001 C CNN
+	1    5500 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 2200 0    50   Input ~ 0
+EN
+Text GLabel 4700 2300 0    50   Input ~ 0
+SENSOR_VP
+Text GLabel 4700 2400 0    50   Input ~ 0
+SENSOR_VN
+Text GLabel 4700 2500 0    50   Input ~ 0
+IO34
+Text GLabel 4700 2600 0    50   Input ~ 0
+IO35
+Text GLabel 4700 2700 0    50   Input ~ 0
+IO32
+Text GLabel 4700 2800 0    50   Input ~ 0
+IO33
+Text GLabel 4700 2900 0    50   Input ~ 0
+IO25
+Text GLabel 4700 3000 0    50   Input ~ 0
+IO26
+Text GLabel 4700 3100 0    50   Input ~ 0
+IO27
+Text GLabel 4700 3200 0    50   Input ~ 0
+IO14
+Text GLabel 4700 3300 0    50   Input ~ 0
+IO12
+Text GLabel 5150 3650 3    50   Input ~ 0
+IO13
+Text GLabel 5850 3650 3    50   Input ~ 0
+IO15
+Text GLabel 5950 3650 3    50   Input ~ 0
+IO2
+Text GLabel 6300 3300 2    50   Input ~ 0
+IO0
+Text GLabel 6300 3200 2    50   Input ~ 0
+IO4
+Text GLabel 6300 3100 2    50   Input ~ 0
+IO16
+Text GLabel 6300 3000 2    50   Input ~ 0
+IO17
+Text GLabel 6300 2900 2    50   Input ~ 0
+IO5
+Text GLabel 6300 2800 2    50   Input ~ 0
+IO18
+Text GLabel 6300 2700 2    50   Input ~ 0
+IO19
+Text GLabel 6300 2500 2    50   Input ~ 0
+IO21
+Text GLabel 6300 2400 2    50   Input ~ 0
+RXD0
+Text GLabel 6300 2300 2    50   Input ~ 0
+TXD0
+Text GLabel 6300 2200 2    50   Input ~ 0
+IO22
+Text GLabel 6300 2100 2    50   Input ~ 0
+IO23
+$Comp
+L power:+3.3V #PWR06
+U 1 1 61C293C8
+P 4550 1900
+F 0 "#PWR06" H 4550 1750 50  0001 C CNN
+F 1 "+3.3V" H 4550 2050 50  0000 C CNN
+F 2 "" H 4550 1900 50  0001 C CNN
+F 3 "" H 4550 1900 50  0001 C CNN
+	1    4550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 61C2991D
+P 6650 2000
+F 0 "#PWR011" H 6650 1750 50  0001 C CNN
+F 1 "GND" H 6650 1850 50  0000 C CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61C2ACAB
+P 4300 2000
+F 0 "#PWR05" H 4300 1750 50  0001 C CNN
+F 1 "GND" H 4300 1850 50  0000 C CNN
+F 2 "" H 4300 2000 50  0001 C CNN
+F 3 "" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2000 6650 2000
+Wire Wire Line
+	6650 1850 6300 1850
+Wire Wire Line
+	6650 1850 6650 2000
+Connection ~ 6650 2000
+Wire Wire Line
+	4700 2000 4300 2000
+Wire Wire Line
+	4550 1900 4550 2100
+Wire Wire Line
+	4550 2100 4700 2100
+Wire Wire Line
+	5050 3650 5050 3850
+$Comp
+L power:+3.3V #PWR08
+U 1 1 61C2CB64
+P 5000 4700
+F 0 "#PWR08" H 5000 4550 50  0001 C CNN
+F 1 "+3.3V" H 5000 4850 50  0000 C CNN
+F 2 "" H 5000 4700 50  0001 C CNN
+F 3 "" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61C2D2E4
+P 4750 4800
+F 0 "#PWR07" H 4750 4550 50  0001 C CNN
+F 1 "GND" H 4750 4650 50  0000 C CNN
+F 2 "" H 4750 4800 50  0001 C CNN
+F 3 "" H 4750 4800 50  0001 C CNN
+	1    4750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 61C2D86D
+P 6250 4800
+F 0 "#PWR010" H 6250 4550 50  0001 C CNN
+F 1 "GND" H 6250 4650 50  0000 C CNN
+F 2 "" H 6250 4800 50  0001 C CNN
+F 3 "" H 6250 4800 50  0001 C CNN
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 5000 0    50   Input ~ 0
+EN
+Text GLabel 5100 5100 0    50   Input ~ 0
+SENSOR_VP
+Text GLabel 5100 5200 0    50   Input ~ 0
+SENSOR_VN
+Text GLabel 5100 5300 0    50   Input ~ 0
+IO34
+Text GLabel 5100 5400 0    50   Input ~ 0
+IO35
+Text GLabel 4400 5500 0    50   Input ~ 0
+IO32
+Text GLabel 4400 5600 0    50   Input ~ 0
+IO33
+Text GLabel 5100 5700 0    50   Input ~ 0
+IO25
+Text GLabel 5100 5800 0    50   Input ~ 0
+IO26
+Text GLabel 5100 5900 0    50   Input ~ 0
+IO27
+Text GLabel 5100 6000 0    50   Input ~ 0
+IO14
+Text GLabel 5100 6100 0    50   Input ~ 0
+IO12
+Text GLabel 5100 6200 0    50   Input ~ 0
+IO13
+Text GLabel 5900 6200 2    50   Input ~ 0
+IO15
+Text GLabel 5900 6100 2    50   Input ~ 0
+IO2
+Text GLabel 5900 6000 2    50   Input ~ 0
+IO0
+Text GLabel 5900 5900 2    50   Input ~ 0
+IO4
+Text GLabel 5900 5800 2    50   Input ~ 0
+IO16
+Text GLabel 5900 5700 2    50   Input ~ 0
+IO17
+Text GLabel 5900 5600 2    50   Input ~ 0
+IO5
+Text GLabel 5900 5500 2    50   Input ~ 0
+IO18
+Text GLabel 5900 5400 2    50   Input ~ 0
+IO19
+Text GLabel 5900 5300 2    50   Input ~ 0
+IO21
+Text GLabel 5900 5200 2    50   Input ~ 0
+RXD0
+Text GLabel 5900 5100 2    50   Input ~ 0
+TXD0
+Text GLabel 5900 5000 2    50   Input ~ 0
+IO22
+Text GLabel 5900 4900 2    50   Input ~ 0
+IO23
+Wire Wire Line
+	5100 4800 4750 4800
+Wire Wire Line
+	5000 4700 5000 4900
+Wire Wire Line
+	5000 4900 5100 4900
+Wire Wire Line
+	5900 4800 6250 4800
+$Comp
+L Device:C_Small C2
+U 1 1 61C35888
+P 2400 2050
+F 0 "C2" H 2500 2100 50  0000 L CNN
+F 1 "0.1uF" H 2500 2000 50  0000 L CNN
+F 2 "DIP-ESP32:1608Metric" H 2400 2050 50  0001 C CNN
+F 3 "~" H 2400 2050 50  0001 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61C35EE6
+P 3050 2050
+F 0 "R1" H 3100 2050 50  0000 L CNN
+F 1 "10k" V 3050 2050 40  0000 C CNN
+F 2 "DIP-ESP32:1608Metric" H 3050 2050 50  0001 C CNN
+F 3 "~" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 61C368AA
+P 2000 1950
+F 0 "#PWR01" H 2000 1800 50  0001 C CNN
+F 1 "+3.3V" H 2000 2100 50  0000 C CNN
+F 2 "" H 2000 1950 50  0001 C CNN
+F 3 "" H 2000 1950 50  0001 C CNN
+	1    2000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61C370C8
+P 2000 2150
+F 0 "#PWR02" H 2000 1900 50  0001 C CNN
+F 1 "GND" H 2000 2000 50  0000 C CNN
+F 2 "" H 2000 2150 50  0001 C CNN
+F 3 "" H 2000 2150 50  0001 C CNN
+	1    2000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61C393C3
+P 2000 2050
+F 0 "C1" H 2100 2100 50  0000 L CNN
+F 1 "10uF" H 2100 2000 50  0000 L CNN
+F 2 "DIP-ESP32:1608Metric" H 2000 2050 50  0001 C CNN
+F 3 "~" H 2000 2050 50  0001 C CNN
+	1    2000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1950 2400 1950
+Connection ~ 2000 1950
+Wire Wire Line
+	2400 2150 2000 2150
+Connection ~ 2000 2150
+$Comp
+L power:+3.3V #PWR03
+U 1 1 61C3A82E
+P 3050 1950
+F 0 "#PWR03" H 3050 1800 50  0001 C CNN
+F 1 "+3.3V" H 3050 2100 50  0000 C CNN
+F 2 "" H 3050 1950 50  0001 C CNN
+F 3 "" H 3050 1950 50  0001 C CNN
+	1    3050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61C3AED1
+P 3050 2350
+F 0 "C3" H 3150 2400 50  0000 L CNN
+F 1 "0.1uF" H 3150 2300 50  0000 L CNN
+F 2 "DIP-ESP32:1608Metric" H 3050 2350 50  0001 C CNN
+F 3 "~" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61C3B9AA
+P 3050 2450
+F 0 "#PWR04" H 3050 2200 50  0001 C CNN
+F 1 "GND" H 3050 2300 50  0000 C CNN
+F 2 "" H 3050 2450 50  0001 C CNN
+F 3 "" H 3050 2450 50  0001 C CNN
+	1    3050 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 2200 2    50   Input ~ 0
+EN
+Wire Wire Line
+	3050 2250 3050 2200
+Wire Wire Line
+	3150 2200 3050 2200
+Connection ~ 3050 2200
+Wire Wire Line
+	3050 2200 3050 2150
+Text GLabel 7700 2250 0    50   Input ~ 0
+IO0
+Text GLabel 7700 2450 0    50   Input ~ 0
+IO2
+$Comp
+L Device:R_Small R2
+U 1 1 61DEE639
+P 7800 2150
+F 0 "R2" H 7850 2150 50  0000 L CNN
+F 1 "10k" V 7800 2150 40  0000 C CNN
+F 2 "DIP-ESP32:1608Metric" H 7800 2150 50  0001 C CNN
+F 3 "~" H 7800 2150 50  0001 C CNN
+	1    7800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61DEECAD
+P 7800 2550
+F 0 "R3" H 7850 2550 50  0000 L CNN
+F 1 "10k" V 7800 2550 40  0000 C CNN
+F 2 "DIP-ESP32:1608Metric" H 7800 2550 50  0001 C CNN
+F 3 "~" H 7800 2550 50  0001 C CNN
+	1    7800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR012
+U 1 1 61DEF283
+P 7800 2050
+F 0 "#PWR012" H 7800 1900 50  0001 C CNN
+F 1 "+3.3V" H 7800 2200 50  0000 C CNN
+F 2 "" H 7800 2050 50  0001 C CNN
+F 3 "" H 7800 2050 50  0001 C CNN
+	1    7800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 61DEFEDD
+P 7800 2650
+F 0 "#PWR013" H 7800 2400 50  0001 C CNN
+F 1 "GND" H 7800 2500 50  0000 C CNN
+F 2 "" H 7800 2650 50  0001 C CNN
+F 3 "" H 7800 2650 50  0001 C CNN
+	1    7800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2250 7800 2250
+Wire Wire Line
+	7800 2450 7700 2450
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 61B741ED
+P 3000 4000
+F 0 "Y1" H 3000 4200 50  0000 C CNN
+F 1 "32.768kHz" H 3000 4100 50  0000 C CNN
+F 2 "DIP-ESP32:Crystal_SMD_3215-2Pin" H 3000 4000 50  0001 C CNN
+F 3 "~" H 3000 4000 50  0001 C CNN
+	1    3000 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 4000 0    50   Input ~ 0
+IO32
+Text GLabel 3200 4000 2    50   Input ~ 0
+IO33
+$Comp
+L Device:R_Small R4
+U 1 1 61B7555C
+P 3000 4200
+F 0 "R4" V 2950 4200 50  0000 C BNN
+F 1 "5M" V 3000 4200 40  0000 C CNN
+F 2 "DIP-ESP32:1608Metric" H 3000 4200 50  0001 C CNN
+F 3 "~" H 3000 4200 50  0001 C CNN
+	1    3000 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 61B76735
+P 3150 4300
+F 0 "C5" H 3250 4350 50  0000 L CNN
+F 1 "10pF" H 3250 4250 50  0000 L CNN
+F 2 "DIP-ESP32:1005Metric" H 3150 4300 50  0001 C CNN
+F 3 "~" H 3150 4300 50  0001 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61B76E2E
+P 2850 4300
+F 0 "C4" H 2750 4350 50  0000 R CNN
+F 1 "10pF" H 2750 4250 50  0000 R CNN
+F 2 "DIP-ESP32:1005Metric" H 2850 4300 50  0001 C CNN
+F 3 "~" H 2850 4300 50  0001 C CNN
+	1    2850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61C2C5AC
+P 5050 3850
+F 0 "#PWR09" H 5050 3600 50  0001 C CNN
+F 1 "GND" H 5050 3700 50  0000 C CNN
+F 2 "" H 5050 3850 50  0001 C CNN
+F 3 "" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 61B77D86
+P 3000 4400
+F 0 "#PWR014" H 3000 4150 50  0001 C CNN
+F 1 "GND" H 3000 4250 50  0000 C CNN
+F 2 "" H 3000 4400 50  0001 C CNN
+F 3 "" H 3000 4400 50  0001 C CNN
+	1    3000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4000 3150 4000
+Wire Wire Line
+	2900 4000 2850 4000
+Wire Wire Line
+	3150 4200 3150 4000
+Connection ~ 3150 4000
+Wire Wire Line
+	3150 4000 3100 4000
+Wire Wire Line
+	3150 4200 3100 4200
+Connection ~ 3150 4200
+Wire Wire Line
+	2900 4200 2850 4200
+Wire Wire Line
+	2850 4200 2850 4000
+Connection ~ 2850 4200
+Connection ~ 2850 4000
+Wire Wire Line
+	2850 4000 2800 4000
+Wire Wire Line
+	2850 4400 3000 4400
+Connection ~ 3000 4400
+Wire Wire Line
+	3000 4400 3150 4400
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 61B7B3D6
+P 4550 5500
+F 0 "JP1" H 4750 5550 50  0000 C CNN
+F 1 "SolderJumper" H 4550 5614 50  0001 C CNN
+F 2 "DIP-ESP32:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4550 5500 50  0001 C CNN
+F 3 "~" H 4550 5500 50  0001 C CNN
+	1    4550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 61B7EEC7
+P 4550 5600
+F 0 "JP2" H 4750 5650 50  0000 C CNN
+F 1 "SolderJumper" H 4550 5714 50  0001 C CNN
+F 2 "DIP-ESP32:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4550 5600 50  0001 C CNN
+F 3 "~" H 4550 5600 50  0001 C CNN
+	1    4550 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5500 4700 5500
+Wire Wire Line
+	4700 5600 5100 5600
+$EndSCHEMATC
